@@ -1,0 +1,18 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs e banco local
+*.log
+*.sql
+
+# Variáveis sensíveis
+.env
+includes/config.php
+
+# Uploads de usuários
+uploads/
+backups/
+
+# Outras estruturas dinâmicas (se aplicável)
+# includes/ajax/tmp/
