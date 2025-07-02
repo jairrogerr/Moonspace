@@ -74,7 +74,11 @@ $date = $DateTime->format('Y-m-d H:i:s');
 
 
 // connect to the database
-$db = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, DB_PORT);
+$db = new mysqli(getenv('DB_HOST'),
+  getenv('DB_USER'),
+  getenv('DB_PASS'),
+  getenv('DB_NAME'),
+  getenv('DB_PORT'));
 $db->set_charset('utf8mb4');
 if (mysqli_connect_error()) {
     _error("DB_ERROR");
