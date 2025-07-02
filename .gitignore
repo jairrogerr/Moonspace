@@ -8,7 +8,6 @@ Thumbs.db
 
 # Variáveis sensíveis
 .env
-includes/config.php
 
 # Uploads de usuários
 uploads/
